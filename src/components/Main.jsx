@@ -8,8 +8,7 @@ function Main() {
 
     
     const dispatch = useDispatch()
-    const  {products}  = useSelector(state =>state)
-    console.log(products)
+    const  {products}  = useSelector(state =>state.product)
 
     useEffect(()=>{
         dispatch(getAllProducts());
@@ -17,14 +16,14 @@ function Main() {
 
   return (
     <div className="row">
-        {/* {
+        {
             products.map((product,index)=>{
-                return <div key={index} className='col-md-4'>
+                return <div key={index} className='col-md-2'>
                     <h2>{product.title}</h2>
                     <p>{product.price}</p>
                 </div>
             })
-        } */}
+        }
 
     </div>
   )
