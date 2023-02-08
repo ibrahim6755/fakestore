@@ -7,7 +7,6 @@ import { productReducer } from '../redux/productReducer'
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
 
-
 const rootReducer = combineReducers(
     {
         product: productReducer,
