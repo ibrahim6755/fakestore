@@ -24,8 +24,8 @@ function Main() {
                 {
                     products.map((product, index) => {
                         return <div key={index} className='col-md-3 p-2 px-2'>
-                            <div className="card px-2" >
-                                <img src={product.image} className="card-img-top px-5 pt-3" alt="..." />
+                            <div className="card px-2 overflow-auto m-2" style={{height:'500px'}} >
+                                <img src={product.image} className="card-img-top px-5 py-5 pt-3" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title ">{product.title}</h5>
                                     <p className="card-text fs-6 lh-base font-monospace">{product.description}</p>
